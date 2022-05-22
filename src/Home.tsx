@@ -22,8 +22,8 @@ import { usePoller } from './hooks/usePoller';
 
 import toast, { Toaster } from 'react-hot-toast';
 
-const IMAGE_LINK = '/Skelly.jpg';
-const LOGO_LINK = '/DOTD-logo-1.png';
+const IMAGE_LINK = '/Animation.gif';
+const LOGO_LINK = '/box.png';
 
 const ConnectButton = styled(WalletMultiButton)`
     width: 100%;
