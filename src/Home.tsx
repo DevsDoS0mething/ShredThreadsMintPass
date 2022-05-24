@@ -19,7 +19,9 @@ import { MintButton } from './components/MintButton';
 import { GatewayProvider } from '@civic/solana-gateway-react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import { usePoller } from './hooks/usePoller';
-
+import { BsInstagram, BsTwitter } from "react-icons/bs";
+import { FaGlobeAmericas} from "react-icons/fa";
+import { SiDiscord } from "react-icons/si";
 import toast, { Toaster } from 'react-hot-toast';
 
 const IMAGE_LINK = '/Animation.gif';
@@ -155,9 +157,57 @@ const Home = (props: HomeProps) => {
 
     return (
         <div className="bg-ded bg-no-repeat bg-cover">
+            
             <Toaster />
+            
             <div className="grid min-h-screen grid-cols-1 bg-black/40 place-content-center">
+            
                 <div className="relative p-4 bg-[#212529] shadow-xl border-neutral-600 mt-3 ring-1  max-w-sm mx-auto rounded-lg my-3">
+                <section className="mt-0 md:mt-0 mb-0">
+      <div className="text-center text-white section_title">Join Our Community</div>
+      <ul className="flex items-center justify-center gap-12">
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/ShredThreadsNFT"
+            className="text-white hover:text-secondary"
+          >
+            <BsTwitter size={35} />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://discord.gg/bMacBby3"
+            className="text-white hover:text-secondary"
+          >
+            <SiDiscord size={35} />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/shredthreadsnft/"
+            className="text-white hover:text-secondary"
+          >
+            <BsInstagram size={35} />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="http://www.shredthreadsnfts.com/"
+            className="text-white hover:text-secondary"
+          >
+            <FaGlobeAmericas size={35} />
+          </a>
+        </li>
+      </ul>
+    </section>
                     <img src={LOGO_LINK} alt="" width="100%" style={{ borderRadius: '5px' }} />
                 </div>
                 <div className="relative p-2 bg-[#212529] shadow-xl border-neutral-600 aspect-square ring-1  max-w-sm mx-auto my-3 rounded-lg ">
