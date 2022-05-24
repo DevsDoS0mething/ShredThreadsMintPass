@@ -208,6 +208,7 @@ const Home = (props: HomeProps) => {
         </li>
       </ul>
     </section>
+    <div className="text-center text-[#212529]"> yo </div>
                     <img src={LOGO_LINK} alt="" width="100%" style={{ borderRadius: '5px' }} />
                 </div>
                 <div className="relative p-2 bg-[#212529] shadow-xl border-neutral-600 aspect-square ring-1  max-w-sm mx-auto my-3 rounded-lg ">
