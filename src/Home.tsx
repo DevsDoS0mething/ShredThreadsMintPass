@@ -154,9 +154,9 @@ const Home = (props: HomeProps) => {
     }, [anchorWallet, props.candyMachineId, props.connection, refreshCandyMachineState]);
 
     return (
-        <div className="bg-ded bg-[length:200px] min-h-screen">
+        <div className="bg-ded bg-no-repeat bg-cover">
             <Toaster />
-            <div className="grid min-h-screen grid-cols-1 bg-black/95 place-content-center">
+            <div className="grid min-h-screen grid-cols-1 bg-black/40 place-content-center">
                 <div className="relative p-4 bg-[#212529] shadow-xl border-neutral-600 mt-3 ring-1  max-w-sm mx-auto rounded-lg my-3">
                     <img src={LOGO_LINK} alt="" width="100%" style={{ borderRadius: '5px' }} />
                 </div>
